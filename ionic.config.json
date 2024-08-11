@@ -1,0 +1,7 @@
+{
+  "name": "Api Rick And Morty Project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
