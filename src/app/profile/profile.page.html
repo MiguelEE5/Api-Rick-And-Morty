@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <div *ngIf="character">
+          <ion-card style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <img src="{{character.image}}" alt="{{character.name}}" style="width: 100%; height: auto; object-fit: cover;">
+            <ion-card-content style="text-align: center;">
+              <ion-card-title>
+                {{character.name}}
+              </ion-card-title>
+              <p>Status: {{character.status}}</p>
+              <p>Species: {{character.species}}</p>
+              <p>Gender: {{character.gender}}</p>
+              <p>Origin: {{character.origin.name}}</p>
+              <p>Location: {{character.location.name}}</p>
+              <p>Episodes: {{character.episode.length}}</p>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
